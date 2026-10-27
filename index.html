@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to get accepted on micro1 (from a current contractor)</title>
+<meta name="description" content="A current micro1 contractor's honest notes on what the work is like, how the AI interview feels, how to prepare, timing and pay. Contains disclosed referral links.">
+<!-- ANALYTICS: privacy-friendly page-view and outbound-click tracking goes here once chosen and approved. No trackers are loaded yet. -->
+<style>
+  :root {
+    --bg: #fbfaf7; --text: #1f2328; --muted: #5b6168; --line: #e3e0d8;
+    --card: #ffffff; --accent: #1f5f8b; --accent-text: #ffffff; --note: #f3efe4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171a; --text: #e8e6e1; --muted: #a3a8ae; --line: #2c3036;
+      --card: #1c1f23; --accent: #6fb0dc; --accent-text: #0d1114; --note: #23262b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main, header, footer { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+  header { padding-top: 40px; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 8px; }
+  h2 { font-size: 1.3rem; margin: 40px 0 8px; padding-top: 8px; border-top: 1px solid var(--line); }
+  h3 { font-size: 1.05rem; margin: 20px 0 4px; }
+  p, li { margin: 0 0 12px; }
+  .lede { color: var(--muted); margin-bottom: 16px; }
+  .disclosure {
+    background: var(--note); border-left: 3px solid var(--accent);
+    padding: 10px 14px; font-size: 0.92rem; border-radius: 4px; margin: 12px 0 20px;
+  }
+  nav.toc { font-size: 0.95rem; }
+  nav.toc a { color: var(--accent); }
+  .cols { display: grid; gap: 16px; grid-template-columns: 1fr; }
+  @media (min-width: 620px) { .cols { grid-template-columns: 1fr 1fr; } }
+  .box { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+  .box h3 { margin-top: 0; }
+  .roles { display: grid; gap: 12px; grid-template-columns: 1fr; margin-top: 12px; }
+  @media (min-width: 620px) { .roles { grid-template-columns: 1fr 1fr; } }
+  .role { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+  .role p { font-size: 0.93rem; color: var(--muted); margin-bottom: 10px; }
+  .btn {
+    display: inline-block; background: var(--accent); color: var(--accent-text);
+    text-decoration: none; font-weight: 600; padding: 10px 16px; border-radius: 6px;
+  }
+  .btn:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .role small { display: block; margin-top: 8px; font-size: 0.8rem; color: var(--muted); }
+  details { border-bottom: 1px solid var(--line); padding: 10px 0; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { margin-top: 8px; }
+  footer { margin-top: 48px; padding-bottom: 40px; font-size: 0.88rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>How to get accepted on micro1 (from a current contractor)</h1>
+  <p class="lede">Notes from someone who does AI training work on micro1: what the work is like, how the AI interview feels, how I'd prepare, and what to expect on timing and pay. Just my own experience, no hype.</p>
+  <p class="disclosure"><strong>Disclosure:</strong> this page has my referral links. I earn a bonus if you're hired through one, at no cost to you. I'm a contractor, not a micro1 employee, recruiter or agent, and I can't influence who gets accepted.</p>
+  <nav class="toc" aria-label="Contents">
+    <a href="#who">Who I am</a> ·
+    <a href="#work">What the work is like</a> ·
+    <a href="#interview">The AI interview</a> ·
+    <a href="#timeline">Timeline</a> ·
+    <a href="#pay">Pay</a> ·
+    <a href="#roles">Open roles</a> ·
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="who">
+  <h2>Who I am</h2>
+  <p>I work as an AI training contractor. Most of my work is writing: building "golden" rubrics, prompts and model responses in generalist and humanities topics (literature, history, psychology), and checking other contributors' rubrics for quality. I've completed Prompt Academy and Rubric Academy training and a red-teaming workshop.</p>
+  <p>I've also done:</p>
+  <ul>
+    <li><strong>Evaluation:</strong> rating AI emotional-support responses for safety, empathy, avoiding diagnosis and knowing when to escalate; comparing personalized vs. standard AI answers.</li>
+    <li><strong>Annotation:</strong> audio transcription and speaker labelling, OCR (drawing boxes and transcribing text), checking how faithfully AI reproduces Office documents, and tagging/counting things in video, images and audio.</li>
+  </ul>
+  <p>I'm not a lawyer, doctor or engineer, so for those fields I can only describe the process, not the specialist work itself.</p>
+</section>
+
+<section id="work">
+  <h2>What micro1 work is like</h2>
+  <div class="cols">
+    <div class="box">
+      <h3>What I like</h3>
+      <ul>
+        <li>Pay is higher than most data-annotation platforms I've seen.</li>
+        <li>Teams are well organized and communication is clear.</li>
+        <li>Many new roles are added daily.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>What's harder</h3>
+      <ul>
+        <li>The AI interview is very thorough. It isn't difficult, but you do need to prepare properly.</li>
+        <li>Getting accepted isn't guaranteed. You're matched to specific roles, so fit matters.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="interview">
+  <h2>How the AI interview works, and how to prepare</h2>
+  <p>You do the interview with an AI interviewer, not a person. In my experience it was thorough, and the questions were clearly tied to the role I applied for. It wasn't hard, but it rewarded preparation.</p>
+  <p>This is the advice I'd give a friend. It's general preparation advice, not inside information about what will be asked:</p>
+  <ol>
+    <li><strong>Read the role posting carefully.</strong> Note the field, the skills listed and the kind of tasks described. That's your study guide.</li>
+    <li><strong>Review your fundamentals.</strong> Brush up on the core concepts of your field that the role mentions, as if you had to explain them to a smart beginner.</li>
+    <li><strong>Practice explaining your reasoning out loud.</strong> AI training work is about judgement: why one answer is better than another. Get comfortable talking through your thinking step by step.</li>
+    <li><strong>Set up a quiet space.</strong> Good internet and no interruptions. If your interview uses your mic or camera, test them beforehand.</li>
+    <li><strong>Be specific and honest.</strong> Use real examples from your own work. Don't overstate experience. The role match depends on it.</li>
+  </ol>
+</section>
+
+<section id="timeline">
+  <h2>Timeline</h2>
+  <p>For me, the time from applying to first paid work has usually been somewhere between <strong>one week and one month</strong>. It depends on the role and how quickly projects start. Your timeline may differ.</p>
+</section>
+
+<section id="pay">
+  <h2>Pay</h2>
+  <ul>
+    <li><strong>Pay is set per role</strong> and shown on each job posting. Rates vary a lot by field, so check the posting rather than trusting any single number you see online.</li>
+    <li><strong>Training and assessments are paid</strong> in my experience.</li>
+    <li><strong>Payments have been secure and regular</strong> for me.</li>
+  </ul>
+</section>
+
+<section id="roles">
+  <h2>Open roles by field</h2>
+  <p>Each button opens micro1's current openings for that field. Pay and requirements are on each posting.</p>
+  <p class="disclosure"><strong>Disclosure:</strong> every button below is my referral link. I earn a bonus if you're hired through it, at no cost to you.</p>
+
+  <div class="roles">
+    <div class="role">
+      <h3>All roles</h3>
+      <p>Not sure where you fit? Browse everything.</p>
+      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See all open roles</a>
+      <small>My referral link. I earn a bonus if you're hired.</small>
+    </div>
+    <div class="role">
+      <h3>Legal</h3>
+      <p>Roles for attorneys and legal professionals.</p>
+      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=f8b5477c-1e69-4b34-91a7-4da5cf8b8b73&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See legal roles</a>
+      <small>My referral link. I earn a bonus if you're hired.</small>
+    </div>
+    <div class="role">
+      <h3>Medical &amp; healthcare</h3>
+      <p>Roles for physicians, nurses and clinicians.</p>
+      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=619772a9-b796-4272-8806-c1685a8f3f08&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See medical roles</a>
+      <small>My referral link. I earn a bonus if you're hired.</small>
+    </div>
+    <div class="role">
+      <h3>Software &amp; tech</h3>
+      <p>Roles for software engineers and developers.</p>
+      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=d8e4ee24-52a7-456b-a56f-8ae3f3c14760&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See tech roles</a>
+      <small>My referral link. I earn a bonus if you're hired.</small>
+    </div>
+    <div class="role">
+      <h3>Data</h3>
+      <p>Roles for data scientists and analysts.</p>
+      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=284b6d3a-5633-4aa6-bcc8-fbd7683d4921&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See data roles</a>
+      <small>My referral link. I earn a bonus if you're hired.</small>
+    </div>
+    <div class="role">
+      <h3>Research</h3>
+      <p>Roles for researchers and academics.</p>
+      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=619fd040-d155-455b-a839-0db7bbf2d00d&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See research roles</a>
+      <small>My referral link. I earn a bonus if you're hired.</small>
+    </div>
+    <div class="role">
+      <h3>Science</h3>
+      <p>Roles for scientists in specific disciplines.</p>
+      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=186cc9ea-7c41-4754-96f4-ce219f173488&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See science roles</a>
+      <small>My referral link. I earn a bonus if you're hired.</small>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <h2>FAQ</h2>
+  <details>
+    <summary>Is micro1 legit?</summary>
+    <p>I can only speak for myself: I've done paid work there, my training and assessments were paid, and payments have arrived securely and on a regular schedule. That's my experience, not a guarantee for every role or country.</p>
+    <p>One caution: apply only through micro1's own site. Never pay anyone for a "guaranteed" role, and be wary of people messaging you claiming to be micro1 recruiters.</p>
+  </details>
+  <details>
+    <summary>Is the AI interview hard?</summary>
+    <p>For me it wasn't hard, but it was thorough and specific to the role. Preparation makes the difference. See the <a href="#interview">prep tips above</a>.</p>
+  </details>
+  <details>
+    <summary>How long until I get paid work?</summary>
+    <p>In my case, usually one week to one month from applying. It varies by role.</p>
+  </details>
+  <details>
+    <summary>How much does it pay?</summary>
+    <p>It depends on the role. The rate is listed on each posting. I won't quote a number here because rates change and differ by field.</p>
+  </details>
+  <details>
+    <summary>Do I have to use your link?</summary>
+    <p>No. You can go to micro1's site directly. If you use my link and get hired, I get a referral bonus and it costs you nothing. If you've already applied before, a referral link may not apply to you.</p>
+  </details>
+  <details>
+    <summary>Do you work for micro1?</summary>
+    <p>No. I'm an independent contractor who does AI training work through the platform. I'm not staff, a recruiter or an agent, and I have no say in hiring decisions.</p>
+  </details>
+</section>
+
+</main>
+
+<footer>
+  <p><strong>Disclosure:</strong> this page contains referral links. If you're hired through one, I earn a referral bonus from micro1 at no cost to you. I'm an independent contractor, not affiliated with micro1 as staff, recruiter or agent. Everything here is my personal experience; yours may differ.</p>
+  <p>Last updated: 2026-10-27</p>
+</footer>
+
+</body>
+</html>
