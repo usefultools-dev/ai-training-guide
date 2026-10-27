@@ -40,13 +40,17 @@
   @media (min-width: 620px) { .cols { grid-template-columns: 1fr 1fr; } }
   .box { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
   .box h3 { margin-top: 0; }
-  .roles { display: grid; gap: 12px; grid-template-columns: 1fr; margin-top: 12px; }
-  @media (min-width: 620px) { .roles { grid-template-columns: 1fr 1fr; } }
-  .role { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
-  .role p { font-size: 0.93rem; color: var(--muted); margin-bottom: 10px; }
+  .platforms { max-width: 1440px; margin: 0 auto; padding: 0 16px; display: grid; gap: 0 32px;
+               grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); }
+  .platforms h2 { margin-top: 24px; }
+  .platforms > section > p { font-size: 0.93rem; color: var(--muted); margin-bottom: 0; }
+  .roles { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); margin-top: 12px; }
+  .role { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px;
+          display: flex; flex-direction: column; justify-content: space-between; gap: 8px; }
+  .role h3 { margin: 0; font-size: 0.95rem; line-height: 1.3; }
   .btn {
-    display: inline-block; background: var(--accent); color: var(--accent-text);
-    text-decoration: none; font-weight: 600; padding: 10px 16px; border-radius: 6px;
+    display: block; text-align: center; background: var(--accent); color: var(--accent-text);
+    text-decoration: none; font-weight: 600; font-size: 0.9rem; padding: 7px 10px; border-radius: 6px;
   }
   .btn:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
   .role small { display: block; margin-top: 8px; font-size: 0.8rem; color: var(--muted); }
@@ -62,7 +66,7 @@
   <h1>How to get accepted on micro1 (from a current contractor)</h1>
   <p class="lede">Notes from someone who does AI training work on micro1: what the work is like, how the AI interview feels, how I'd prepare, and what to expect on timing and pay. Just my own experience, no hype.</p>
   <nav class="toc" aria-label="Contents">
-    <a href="#roles"><strong>Open roles</strong></a> ·
+    <a href="#roles"><strong>micro1 roles</strong></a> ·
     <a href="#mercor"><strong>Mercor roles</strong></a> ·
     <a href="#who">Who I am</a> ·
     <a href="#work">What the work is like</a> ·
@@ -73,113 +77,96 @@
   </nav>
 </header>
 
-<main>
-
+<div class="platforms">
 <section id="roles">
-  <h2>Open roles by field</h2>
-  <p>Pick your field to see micro1's current openings. Pay and requirements are on each posting. My notes on the interview, timing and pay are <a href="#who">further down</a>.</p>
+  <h2>micro1 roles</h2>
+  <p>Pick your field. Pay and requirements are on each posting.</p>
   <div class="roles">
     <div class="role">
       <h3>Legal</h3>
-      <p>Roles for attorneys and legal professionals.</p>
-      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=f8b5477c-1e69-4b34-91a7-4da5cf8b8b73&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See legal roles</a>
+      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=f8b5477c-1e69-4b34-91a7-4da5cf8b8b73&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
     <div class="role">
       <h3>Medical &amp; healthcare</h3>
-      <p>Roles for physicians, nurses and clinicians.</p>
-      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=619772a9-b796-4272-8806-c1685a8f3f08&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See medical roles</a>
+      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=619772a9-b796-4272-8806-c1685a8f3f08&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
     <div class="role">
       <h3>Software &amp; tech</h3>
-      <p>Roles for software engineers and developers.</p>
-      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=d8e4ee24-52a7-456b-a56f-8ae3f3c14760&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See tech roles</a>
+      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=d8e4ee24-52a7-456b-a56f-8ae3f3c14760&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
     <div class="role">
       <h3>Science</h3>
-      <p>Roles for scientists in specific disciplines.</p>
-      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=186cc9ea-7c41-4754-96f4-ce219f173488&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See science roles</a>
+      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=186cc9ea-7c41-4754-96f4-ce219f173488&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
     <div class="role">
       <h3>Data</h3>
-      <p>Roles for data scientists and analysts.</p>
-      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=284b6d3a-5633-4aa6-bcc8-fbd7683d4921&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See data roles</a>
+      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=284b6d3a-5633-4aa6-bcc8-fbd7683d4921&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
     <div class="role">
       <h3>Research</h3>
-      <p>Roles for researchers and academics.</p>
-      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=619fd040-d155-455b-a839-0db7bbf2d00d&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See research roles</a>
+      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&linkId=619fd040-d155-455b-a839-0db7bbf2d00d&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
     <div class="role">
       <h3>All roles</h3>
-      <p>Not sure where you fit, or your field isn't listed? Browse everything.</p>
-      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See all open roles</a>
+      <a class="btn" href="https://refer.micro1.ai/referral/jobs?referralCode=49558a65-b79b-4bf0-9f4e-c30c4fa35e7d&utm_source=referral&utm_medium=share&utm_campaign=job_referral" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
   </div>
   <p class="note">Referral links: I may earn a reward if you're hired, at no cost to you.</p>
 </section>
-
 <section id="mercor">
-  <h2>Open roles on Mercor, by field</h2>
-  <p>I also do contract work on Mercor. Each button opens Mercor's current openings for that field. Pay and requirements are on each listing.</p>
+  <h2>Mercor roles</h2>
+  <p>I also work on Mercor. Pick your field. Pay and requirements are on each listing.</p>
   <div class="roles">
     <div class="role">
       <h3>Medical &amp; healthcare</h3>
-      <p>Roles for physicians, nurses and clinicians.</p>
-      <a class="btn" href="https://t.mercor.com/qQAUD" rel="sponsored noopener" target="_blank">See medical roles</a>
+      <a class="btn" href="https://t.mercor.com/qQAUD" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
     <div class="role">
       <h3>Legal</h3>
-      <p>Roles for attorneys and legal professionals.</p>
-      <a class="btn" href="https://t.mercor.com/VKFU0" rel="sponsored noopener" target="_blank">See legal roles</a>
+      <a class="btn" href="https://t.mercor.com/VKFU0" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
     <div class="role">
       <h3>Finance</h3>
-      <p>Roles for finance, accounting and investment professionals.</p>
-      <a class="btn" href="https://t.mercor.com/ctuWw" rel="sponsored noopener" target="_blank">See finance roles</a>
+      <a class="btn" href="https://t.mercor.com/ctuWw" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
     <div class="role">
       <h3>Software engineering</h3>
-      <p>Roles for software engineers and developers.</p>
-      <a class="btn" href="https://t.mercor.com/83K7v" rel="sponsored noopener" target="_blank">See software roles</a>
+      <a class="btn" href="https://t.mercor.com/83K7v" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
     <div class="role">
       <h3>Life, physical &amp; social science</h3>
-      <p>Roles for scientists and researchers.</p>
-      <a class="btn" href="https://t.mercor.com/4jvpw" rel="sponsored noopener" target="_blank">See science roles</a>
+      <a class="btn" href="https://t.mercor.com/4jvpw" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
     <div class="role">
       <h3>Business operations</h3>
-      <p>Roles in operations, management and strategy.</p>
-      <a class="btn" href="https://t.mercor.com/InN1C" rel="sponsored noopener" target="_blank">See business roles</a>
+      <a class="btn" href="https://t.mercor.com/InN1C" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
     <div class="role">
       <h3>Data analysis</h3>
-      <p>Roles for data scientists and analysts.</p>
-      <a class="btn" href="https://t.mercor.com/mrnJx" rel="sponsored noopener" target="_blank">See data roles</a>
+      <a class="btn" href="https://t.mercor.com/mrnJx" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
     <div class="role">
       <h3>Other engineering</h3>
-      <p>Roles for mechanical, electrical, civil and other engineers.</p>
-      <a class="btn" href="https://t.mercor.com/x0Ck8" rel="sponsored noopener" target="_blank">See engineering roles</a>
+      <a class="btn" href="https://t.mercor.com/x0Ck8" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
     <div class="role">
       <h3>Arts &amp; design</h3>
-      <p>Roles for writers, artists and designers.</p>
-      <a class="btn" href="https://t.mercor.com/NGeUF" rel="sponsored noopener" target="_blank">See arts &amp; design roles</a>
+      <a class="btn" href="https://t.mercor.com/NGeUF" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
     <div class="role">
       <h3>Other fields</h3>
-      <p>Roles that don't fit the fields above.</p>
-      <a class="btn" href="https://t.mercor.com/8Y8rQ" rel="sponsored noopener" target="_blank">See other roles</a>
+      <a class="btn" href="https://t.mercor.com/8Y8rQ" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
     <div class="role">
       <h3>All roles</h3>
-      <p>Not sure where you fit? Browse everything.</p>
-      <a class="btn" href="https://t.mercor.com/8O3EU" rel="sponsored noopener" target="_blank">See all open roles</a>
+      <a class="btn" href="https://t.mercor.com/8O3EU" rel="sponsored noopener" target="_blank">See roles</a>
     </div>
   </div>
   <p class="note">Referral links: I may earn a reward if you're hired, at no cost to you.</p>
 </section>
+</div>
+
+<main>
 
 <section id="who">
   <h2>Who I am</h2>
